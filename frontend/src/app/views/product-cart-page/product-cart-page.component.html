@@ -1,0 +1,43 @@
+<app-menu></app-menu>
+
+<main id="cart-itens">
+  <div class="cart-itens-container mat-elevation-z6">
+    <div class="content">
+      <h1>Produtos adicionados ao carrinho</h1>
+
+      <p class="cart-empty" *ngIf="isEmpty()">
+        <strong>O carrinho está vazio!</strong>
+      </p>
+
+      <mat-list *ngIf="!isEmpty()" role="list">
+        <app-cart-item
+          *ngFor="let item of items"
+          [item]="item"
+          (itemsEvent)="updateCartItens($event)"
+        ></app-cart-item>
+      </mat-list>
+
+      <div *ngIf="!isEmpty()" class="valor-total">
+        <p>
+          <strong>Total: </strong> {{total() | currency: 'BRL'}}
+        </p>
+      </div>
+
+      <div class="btn-actions">
+        <button 
+          (click)="handleProductPage()" 
+          mat-raised-button
+        >Continuar comprando</button>
+
+        <button 
+          *ngIf="!isEmpty()"
+          (click)="checkout()"
+          mat-raised-button 
+          color="warn"
+        >Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-rodape></app-rodape>
