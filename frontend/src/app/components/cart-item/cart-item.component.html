@@ -1,0 +1,26 @@
+<mat-list-item class="list-item mat-elevation-z2" role="listitem">
+  <img [src]="item.produto?.imgPath || '/assets/prod.jpg'" [alt]="item.produto.nome">
+
+  <div class="dados-item">
+    <span>{{item.produto.nome}}</span>
+    <span>{{item.produto.preco | currency: 'BRL'}}</span>
+  </div>
+
+  <div class="btn-qtd">
+    <button (click)="increaseQuatity(item.produto)" mat-mini-fab color="primary" >
+      <mat-icon>add</mat-icon>
+    </button>
+
+    <span>{{item.quatidade}}</span>
+
+    <button (click)="decreaseQuantity(item.produto)" mat-mini-fab color="primary">
+      <mat-icon>remove</mat-icon>
+    </button>
+  </div>
+
+  <div class="remove-item">
+    <button (click)="removeItem(item.produto)" mat-raised-button color="warn">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</mat-list-item>  

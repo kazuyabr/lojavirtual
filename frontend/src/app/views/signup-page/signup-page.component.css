@@ -1,0 +1,54 @@
+#form-sigup {
+  width: 50vw;
+  margin: 20px auto;
+  padding: 10px 20px;
+
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#form-sigup h1 {
+  text-align: center;
+  color: var(--text);
+}
+
+#form-sigup mat-form-field {
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.btn-action {
+  margin-top: 30px;
+}
+
+.btn-cadastro {
+  width: 100%;
+  color: var(--text-color);
+  background-color: rgb(3, 103, 235);
+}
+
+.btn-cadastro:disabled {
+  background-color: #ccc;
+}
+
+.btn-cancelar {
+  width: 100%;
+  color: var(--text-color);
+  background-color: rgb(187, 10, 10);
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 400px) {
+  #form-sigup {
+    width: 80%;
+  }
+
+  #form-sigup h1 {
+    font-size: 1rem;
+  }
+}

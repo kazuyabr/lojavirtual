@@ -1,0 +1,29 @@
+main {
+  width: 60vw;
+  margin: 15px auto;
+
+  min-height: 500px;
+}
+
+main h2 {
+  color: var(--text);
+}
+
+#card-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  padding: 30px;
+}
+
+.loading {
+  margin: 10% auto;
+}
+
+@media (max-width: 680px) {
+  main {
+    width: 90vw;
+  }
+}

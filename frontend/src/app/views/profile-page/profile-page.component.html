@@ -1,0 +1,22 @@
+<app-menu></app-menu>
+
+<main>
+  <div id="profile" class="mat-elevator-z4">
+    <mat-card>
+      <img
+        [src]="cliente?.imgPath || '/assets/avatar-blank.png'"
+        alt="Imagem de perfil do cliente"
+      />
+
+      <p><strong>Nome:</strong> {{ cliente?.nome }}</p>
+
+      <p><strong>Email:</strong> {{ cliente?.email }}</p>
+    </mat-card>
+
+    <p>
+      <a routerLink="/products-page">Voltar</a>
+    </p>
+  </div>
+</main>
+
+<app-rodape></app-rodape>
