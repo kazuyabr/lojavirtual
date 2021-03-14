@@ -1,0 +1,59 @@
+.list-item {
+  margin-bottom: 10px;
+}
+
+.list-item img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.list-item .dados-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item .dados-item :first-child {
+  font-weight: bold;
+}
+
+.list-item .dados-item :last-child {
+  font-size: .7rem;
+}
+
+.list-item .btn-qtd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 20px;
+}
+
+.list-item .btn-qtd button {
+  width: 30px;
+  height: 30px;
+}
+
+.list-item .btn-qtd button mat-icon {
+  font-size: 15px;
+  vertical-align: center;
+}
+
+.list-item .btn-qtd span {
+  margin: 0 10px;
+}
+
+.list-item .remove-item {
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 470px) {
+  img {
+    display: none;
+  }
+
+  .list-item {
+    font-size: 10px;
+  }
+}
