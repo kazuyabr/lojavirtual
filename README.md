@@ -1,61 +1,27 @@
-# Loja virtual
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/kazuyabr/lojavirtual/blob/master/LICENSE) 
+# Web
 
-# Sobre o projeto
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-Esta Loja Virtual é uma aplicação web construida para dar suporte as vendas online de uma empresa fictícia, mas que atende as necessidades de venda do mundo real. 
+## Development server
 
-A aplicação consiste na exibição de produtos por categoria, bem como na adição desse produto ao carrinho de compras, no cadastro de usuário e na realização de login utilizando Token JWT, no registro e entrega de pedido e no envio de email com os dados e a confirmação do pedido.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Back end
-- Java
-- Spring Boot
-- JPA / Hibernate
-- Maven
-- MockMailService
-- Spring Security
-- Spring Data
+## Code scaffolding
 
-## Front end
-- HTML / CSS / JS / TypeScript
-- Angular 9
-- Material Design
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Implantação em produção
-- Back end: Heroku
-- Front end web: Netlify
-- Banco de dados: PostgreSQL
+## Build
 
-# Como executar o projeto
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Back end
-Pré-requisitos: Java 11
+## Running unit tests
 
-```bash
-# clonar repositório
-https://github.com/kazuyabr/lojavirtual.git
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-# entrar na pasta do projeto back end
-cd backend
+## Running end-to-end tests
 
-# executar o projeto
-./mvnw spring-boot:run
-```
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Front end web
-Pré-requisitos: npm / yarn / Angular-CLI 9 ou superior
+## Further help
 
-```bash
-# clonar repositório
-https://github.com/kazuyabr/lojavirtual.git
-
-# entrar na pasta do projeto front end web
-cd web
-
-# instalar dependências
-npm install
-
-# executar o projeto
-ng serve
-```
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
